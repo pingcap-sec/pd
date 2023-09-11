@@ -1,0 +1,22 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base"
+  ],
+  "postUpdateOptions": [
+    "gomodTidy"
+  ],
+  "dependencyDashboardApproval": true,
+  "labels": ["dependencies"],
+  "vulnerabilityAlerts": {
+    "enabled": true
+  },
+  "packageRules": [
+    {
+      "enabled": false,
+       "groupName": "everything",
+      "matchPackagePatterns": ["*"]
+    }
+  ],
+  "baseBranches": ["master", "release-6.5","removeNewLoaderConfig","release-7.1"]
+}
