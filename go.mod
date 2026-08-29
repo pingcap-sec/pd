@@ -1,6 +1,6 @@
 module github.com/tikv/pd
 
-go 1.21
+go 1.25.0
 
 require (
 	github.com/AlekSi/gocov-xml v1.0.0
@@ -51,11 +51,16 @@ require (
 	go.uber.org/goleak v1.1.12
 	go.uber.org/zap v1.24.0
 	golang.org/x/exp v0.0.0-20230108222341-4b8118a2686a
-	golang.org/x/text v0.9.0
+	golang.org/x/text v0.37.0
 	golang.org/x/time v0.1.0
-	golang.org/x/tools v0.6.0
+	golang.org/x/tools v0.44.0
 	google.golang.org/grpc v1.54.0
 	gotest.tools/gotestsum v1.7.0
+)
+
+require (
+	golang.org/x/telemetry v0.0.0-20260409153401-be6f6cb8b1fa // indirect
+	golang.org/x/tools/godoc v0.1.0-deprecated // indirect
 )
 
 require (
@@ -177,14 +182,14 @@ require (
 	go.uber.org/dig v1.9.0 // indirect
 	go.uber.org/fx v1.12.0 // indirect
 	go.uber.org/multierr v1.11.0 // indirect
-	golang.org/x/crypto v0.1.0 // indirect
-	golang.org/x/image v0.5.0 // indirect
-	golang.org/x/mod v0.8.0 // indirect
-	golang.org/x/net v0.10.0 // indirect
+	golang.org/x/crypto v0.50.0 // indirect
+	golang.org/x/image v0.41.0 // indirect
+	golang.org/x/mod v0.35.0 // indirect
+	golang.org/x/net v0.53.0 // indirect
 	golang.org/x/oauth2 v0.4.0 // indirect
-	golang.org/x/sync v0.1.0 // indirect
-	golang.org/x/sys v0.8.0 // indirect
-	golang.org/x/term v0.8.0 // indirect
+	golang.org/x/sync v0.20.0 // indirect
+	golang.org/x/sys v0.43.0 // indirect
+	golang.org/x/term v0.42.0 // indirect
 	google.golang.org/appengine v1.6.7 // indirect
 	google.golang.org/genproto v0.0.0-20230410155749-daa745c078e1 // indirect
 	google.golang.org/protobuf v1.30.0 // indirect
